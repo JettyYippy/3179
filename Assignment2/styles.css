@@ -1,0 +1,104 @@
+body *{
+    font-family: 'Oxygen', serif;
+}
+
+.introText {
+	text-align: center;
+    font-family: 'Oxygen', serif;
+	font-size: 17px;
+	line-height: 30px;
+	padding-top: 0px;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.page {
+    width: 1150px;
+    background-color: #FFFDF4;
+    margin: auto;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.vis-container {
+    width: 100%;
+}
+
+h1 {
+	font-size: 65px;
+	color: #000000;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-weight: bolder;
+}
+
+
+.pure-g {
+    margin-bottom: 10px;
+}
+
+p {
+	padding-top: 5px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 25px;
+}
+
+h2 {
+	font-size: 35px;
+	color: #404040;
+	font-weight: bolder;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	width: 550px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+#smallFont {
+	font-size: 13px;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.space{
+    height: 15px;
+  }
+  
+.orange {
+    font-weight: bold;
+    color: #ff691e;
+    font-size: 22px;
+}
+  
+.red {
+    font-weight: bold;
+    color: #F08080;
+    font-size: 22px;
+}
+  
+.purple {
+    font-weight: bold;
+    color: #BFA1E2;
+    font-size: 22px;
+}
+  
+.yellow {
+    font-weight: bold;
+    color: #FFD700;
+    font-size: 22px;
+}
+  
+.blue {
+    font-weight: bold;
+    color: #87CEFA;
+    font-size: 22px;
+}
+  
+.green{
+    font-weight: bold;
+    color: #84B3B4;
+    font-size: 22px;
+}
