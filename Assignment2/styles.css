@@ -11,19 +11,20 @@ body *{
 }
 
 body {
-    background-color: lightgrey;
+    background-color: #E5D3B3;
 }
 
 .page {
     width: 1150px;
-    background-color: #FFFDF4;
+    background-color: #E5D3B3;
     margin: auto;
     padding: 50px;
     padding-top: 10px;
 }
 
 .vis-container {
-    width: 100%;
+    background-color: #E5D3B3;
+    width: 80%;
 }
 
 h1 {
@@ -48,11 +49,11 @@ p {
 
 h2 {
 	font-size: 35px;
-	color: #404040;
+	color: #000000;
 	font-weight: bolder;
 	text-align: center;
 	font-family: 'Playfair Display', serif;
-	width: 550px;
+	width: 525px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 }
@@ -67,38 +68,20 @@ h2 {
     height: 15px;
   }
   
-.orange {
-    font-weight: bold;
-    color: #ff691e;
-    font-size: 22px;
+#h2worldmap {
+	width: 100%;
+	background-color: #0081C8;
+    text-align: center;
 }
-  
-.red {
-    font-weight: bold;
-    color: #F08080;
-    font-size: 22px;
+
+#h2worldmap2 {
+	width: 100%;
+	background-color: #FCB131;
+    text-align: center;
 }
-  
-.purple {
-    font-weight: bold;
-    color: #BFA1E2;
-    font-size: 22px;
-}
-  
-.yellow {
-    font-weight: bold;
-    color: #FFD700;
-    font-size: 22px;
-}
-  
-.blue {
-    font-weight: bold;
-    color: #87CEFA;
-    font-size: 22px;
-}
-  
-.green{
-    font-weight: bold;
-    color: #84B3B4;
-    font-size: 22px;
+
+#h2barchart {
+	width: 100%;
+	background-color: #000000;
+    text-align: center;
 }

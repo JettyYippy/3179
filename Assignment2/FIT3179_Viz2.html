@@ -36,22 +36,68 @@
                 <h1>
                    Countries' Olympic's Performance
                 </h1>
-                <p id=".introText">The Summer Olympics is a global multi-sport event held every four years, featuring athletes from around the world in a wide range of summer sports.
-                    It is organized by the International Olympic Committee and encourages cooperation, good sportsmanship, and athletic excellence. The Games have a long history that 
-                    dates back to the time of ancient Greece, and they now serve as an inspiration for international collaboration and competitiveness. </p>
+                <p id=".introText">The Olympics, also known as the Olympic Games, are an international sporting 
+                    competition that alternates between the Summer and Winter Games every four years. 
+                    Athletes from all around the world participate in a variety of sports and disciplines at these competitions. 
+                    The ancient Greek Olympic Games served as the model for the contemporary Olympic Games, which were revived by Pierre de Coubertin in the 
+                    late 19th century. The Games showcase the best athletes in the world while encouraging global cooperation, sportsmanship, and fair competition.
+                </p>
             </div>
         </div>
-    
+
         <div class="pure-g">
-            <div class="pure-u-1-1">
-              <h2 id="worldH2">Life Expectancy of the World</h2>
-              <div id="worldMap" class="vis-container"></div>
+            <div class="pure-u-1-1" style="background-color:#E5D3B3">
+                <h2 id = "h2worldmap">Summer Olympics Medal per Participation</h2>
+              <div id="vis1" class="vis-container" ></div>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-1" style="background-color:#E5D3B3">
+                <h2 id = "h2worldmap2">Winter Olympics Medal per Participation</h2>
+              <div id="vis2" class="vis-container" ></div>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+              <h2 style="color: white;" id="h2barchart">Countries Total Medals</h2>
+              <div id="vis3" class="vis-container"></div>
               <p id="worldText">This visualization provides a thorough <b>overview of life expectancy</b> differences around the world, allowing for comparisons and insights
                 on the health and wellbeing of different populations around the world.</p>
             </div>
-          </div>
+            <div class="pure-u-1-2">
+                <h2 style="color: white;" id="h2barchart">Countries Total Medals</h2>
+                <div id="vis3" class="vis-container"></div>
+                <p id="worldText">This visualization provides a thorough <b>overview of life expectancy</b> differences around the world, allowing for comparisons and insights
+                  on the health and wellbeing of different populations around the world.</p>
+              </div>
+        </div>
 
-        
+
+    <script type="text/javascript">
+        var specVis1 = "./Graphs/summer_map.json";
+        var specVis2 = "./Graphs/winter_map.json";
+        var specVis3 = "./Graphs/medals_bar.json";
+        var specVis4 = "./DV2/Winter_vs_Pop.vl.json";
+
+        vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+
+        vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+    </script>
+
 </body>
 
 </html>
