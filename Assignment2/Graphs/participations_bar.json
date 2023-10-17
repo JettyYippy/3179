@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JettyYippy/3179/main/Assignment2/data/olympics_medals_country_wise.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "window": [{"op": "row_number", "as": "rank"}],
+      "sort": [{"field": "total_total", "order": "descending"}]
+    },
+    {
+      "filter": {"field": "rank", "lte": 20}
+    }
+  ],
+  "vconcat": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "countries ",
+          "type": "nominal",
+          "title": "Country"
+        },
+        "y": {
+          "field": "summer_participations",
+          "type": "quantitative",
+          "title": "Summer Participations"
+        },
+        "color": {
+          "field": "countries ",
+          "type": "nominal",
+          "scale": {"scheme": "set2"},
+          "legend": null
+        }
+      },
+      "config": {"view": {"stroke": "transparent"}}
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "countries ",
+          "type": "nominal",
+          "title": "Country"
+        },
+        "y": {
+          "field": "winter_participations",
+          "type": "quantitative",
+          "title": "Winter Participations"
+        },
+        "color": {
+          "field": "countries ",
+          "type": "nominal",
+          "scale": {"scheme": "set2"},
+          "legend": null
+        }
+      },
+      "config": {"view": {"stroke": "transparent"}
+    }
+  }
+],
+"config": {"background":"lightgoldenrodyellow"} 
+}

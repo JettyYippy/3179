@@ -33,7 +33,7 @@
     <!-- Visualisation Header -->
         <div class="pure-g">
             <div class="pure-u-1-1">
-                <h1>
+                <h1 style="color: white;" id="h1title">
                    Countries' Olympic's Performance
                 </h1>
                 <p id=".introText">The Olympics, also known as the Olympic Games, are an international sporting 
@@ -60,26 +60,57 @@
         </div>
 
         <div class="pure-g">
-            <div class="pure-u-1-2">
-              <h2 style="color: white;" id="h2barchart">Countries Total Medals</h2>
-              <div id="vis3" class="vis-container"></div>
-              <p id="worldText">This visualization provides a thorough <b>overview of life expectancy</b> differences around the world, allowing for comparisons and insights
-                on the health and wellbeing of different populations around the world.</p>
+            <div class="pure-u-1-1">
+                <p>From the 2 Maps above, we can see how different countries do in the Summer and Winter Olympics.
+                    <b>Canada</b> does well in the Winter Olympics but not the Summer Olympics whereas <b>Australia</b> 
+                    does well in the Summer Olympics but not the Winter Olympics. <b>Russia</b> on the other hand, 
+                    performs well in both the Summer and Winter Olympics.
+                </p>
             </div>
-            <!-- <div class="pure-u-1-2">
-                <h2 style="color: white;" id="h2barchart">Countries Total Medals</h2>
-                <div id="vis3" class="vis-container"></div>
-                <p id="worldText">This visualization provides a thorough <b>overview of life expectancy</b> differences around the world, allowing for comparisons and insights
-                  on the health and wellbeing of different populations around the world.</p>
-              </div> -->
         </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <div id="vis3" class="vis-container"></div>
+            </div>
+            <div class="pure-u-1-2">
+                <h2 id="h2bubchart" >Countries Total Medals</h2>
+                <p id="worldText" style="text-size-adjust: 30px;">The visualization on the left provides a thorough <b>Summer Olympic Medals</b> won by countries and shows their populations, 
+                    so that we can compare which country has a better medals won per population, 
+                    to see which country produces better athletes in general.</p>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <h2 id="h2barchart" >Countries Summer vs Winter Participation</h2>
+                <p id="worldText" style="text-size-adjust: 30px;">The visualization on the right shows the top 20 countries in terms of
+                <b>Total Medals</b> receieved and aims to compare their participations in the Summer and Winter Olympics. 
+            From this visualization, we will be able to see which strong country is better in which Olympic categories, and we can also
+         further relate it by thinking of the terrain, weather the country has throughout the year that allow them to have such success in the Olympics.</p>
+            </div>
+            <div class="pure-u-1-2">
+                <div id="vis4" class="vis-container"></div>
+            </div>
+
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+              <div>
+                <p id="smallFont">© Made for FIT3179 Data Visualization 2 by Yip Kin Keat.</p>
+                </p>
+              </div>
+            </div>
+        
+        </div>  
 
 
     <script type="text/javascript">
         var specVis1 = "./Graphs/summer_map.json";
         var specVis2 = "./Graphs/winter_map.json";
         var specVis3 = "./Graphs/summer_vs_population.json";
-        var specVis4 = "./DV2/Winter_vs_Pop.vl.json";
+        var specVis4 = "./Graphs/participations_bar.json";
 
         vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view

@@ -58,9 +58,20 @@ h2 {
 	padding-bottom: 12px;
 }
 
+h3 {
+	font-size: 20px;
+	color: #000000;
+	font-weight: bolder;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	width: 525px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
 #smallFont {
 	font-size: 13px;
-	text-align: left;
+	text-align: right;
 	padding-top: 20px;
 }
 
@@ -68,6 +79,11 @@ h2 {
     height: 15px;
   }
   
+#h1title {
+	width: 100%;
+	background-color: #000000;
+    text-align: center;
+}
 #h2worldmap {
 	width: 100%;
 	background-color: #0081C8;
@@ -80,8 +96,14 @@ h2 {
     text-align: center;
 }
 
+#h2bubchart {
+	width: 100%;
+	background-color: #00A651;
+    text-align: center;
+}
+
 #h2barchart {
 	width: 100%;
-	background-color: #000000;
+	background-color: #EE334E;
     text-align: center;
 }
